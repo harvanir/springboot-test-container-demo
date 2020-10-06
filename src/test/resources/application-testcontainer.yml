@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+    url: jdbc:tc:mysql:5.7.31:///?TC_TMPFS=/var/lib/mysql:rw&TC_INITSCRIPT=db/migration/V1_1_1__create_items.sql
+    platform: org.hibernate.dialect.MySQL8Dialect
+  jpa:
+    database: mysql
